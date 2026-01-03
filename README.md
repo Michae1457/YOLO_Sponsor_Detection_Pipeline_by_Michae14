@@ -2,6 +2,11 @@
 
 **Automated sponsor logo detection and exposure metrics computation for squash men's final.**
 
+<img width="1470" height="956" alt="Screenshot 2026-01-03 at 00 21 05" src="https://github.com/user-attachments/assets/a827edae-345a-4c50-992d-2f17b39d2c52" />
+
+<img width="1470" height="956" alt="Screenshot 2026-01-03 at 00 21 55" src="https://github.com/user-attachments/assets/ab577bd1-2f7d-4dd7-819e-f0ebffe9c4e6" />
+
+
 ## Overview
 
 This pipeline analyzes broadcast video segments to quantify sponsor exposure using computer vision. It detects sponsor logos throughout the video, tracks their appearance duration, computes prominence metrics, and generates comprehensive analytics reports for sponsor valuation.
@@ -12,7 +17,7 @@ The system is designed for sports broadcast analysis, with support for multiple 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     Input: Video + Config                   │
+│               Input: Video + Config                         │
 └───────────────────────┬─────────────────────────────────────┘
                         │
                         ▼
@@ -253,18 +258,6 @@ Brand-level key performance indicators:
 **KPI 4: Share of Voice (SOV)**
 - `SOV_all_sponsors`: Share of Voice among all sponsors (%)
 - `SOV_category`: Share of Voice within brand category (%)
-
-## Model Training
-
-The pipeline uses a YOLO v8 model trained on sponsor logo datasets. Model training data is located in `datasets/squash-sponsor-detection_v2/`.
-
-### Training Script
-
-Use `start_training.sh` to train or retrain the model:
-
-```bash
-bash start_training.sh
-```
 
 ### Model Performance
 
