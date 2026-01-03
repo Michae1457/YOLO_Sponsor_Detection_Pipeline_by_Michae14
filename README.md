@@ -1,4 +1,4 @@
-# Sponsor Exposure Analytics Pipeline
+# YOLO8 Sponsor Detection Pipeline
 
 **Automated sponsor logo detection and exposure metrics computation for squash men's final.**
 
