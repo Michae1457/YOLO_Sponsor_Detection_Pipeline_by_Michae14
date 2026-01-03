@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "event_name": "2025 China Open Squash - Final",
+    "description": "YOLO-only pipeline - minimal configuration, trust the model!"
+  },
+
+  "detector_config": {
+    "type": "yolo",
+    "model_path": "runs/detect/squash_sponsors_v2/weights/best.pt",
+    "min_confidence": 0.40,
+    "enabled": true
+  },
+
+  "temporal_smoothing": {
+    "enabled": true,
+    "confirm_frames": 2,
+    "drop_frames": 15,
+    "max_label_switch_per_second": 3
+  },
+
+  "brands": [
+    {
+      "brand_id": "HOST_JUSS_SPORTS",
+      "display_name": "JUSS Sports",
+      "category": "host",
+      "yolo_classes": ["juss_sports_logo"]
+    },
+    {
+      "brand_id": "HOST_SHANGHAI_SPORTS",
+      "display_name": "Shanghai Sports",
+      "category": "host",
+      "yolo_classes": ["shanghai_sports_logo"]
+    },
+    {
+      "brand_id": "HOST_CSO",
+      "display_name": "China Open Squash",
+      "category": "host",
+      "yolo_classes": ["cso_logo"]
+    },
+    {
+      "brand_id": "HOST_PSA",
+      "display_name": "PSA Squash Tour",
+      "category": "host",
+      "yolo_classes": ["psa_logo"]
+    },
+    {
+      "brand_id": "GOLD_MITSUBISHI_ELECTRIC",
+      "display_name": "Mitsubishi Electric",
+      "category": "gold",
+      "yolo_classes": ["mitsubishi_electric_logo"]
+    },
+    {
+      "brand_id": "GOLD_CGG",
+      "display_name": "CGG",
+      "category": "gold",
+      "yolo_classes": ["cgg_logo"]
+    },
+    {
+      "brand_id": "GOLD_JOYUS",
+      "display_name": "JOYUS",
+      "category": "gold",
+      "yolo_classes": ["joyus_logo"]
+    },
+    {
+      "brand_id": "SILVER_CITIC_BANK",
+      "display_name": "CITIC Bank",
+      "category": "silver",
+      "yolo_classes": ["citic_bank_logo"]
+    },
+    {
+      "brand_id": "SILVER_HEAD",
+      "display_name": "HEAD",
+      "category": "silver",
+      "yolo_classes": ["head_logo"]
+    },
+    {
+      "brand_id": "SILVER_PARKWAY",
+      "display_name": "Parkway Health",
+      "category": "silver",
+      "yolo_classes": ["parkway_logo"]
+    },
+    {
+      "brand_id": "BRONZE_MOLIFANG",
+      "display_name": "MOLIFANG",
+      "category": "bronze",
+      "yolo_classes": ["molifang_logo"]
+    },
+    {
+      "brand_id": "BRONZE_DUNLOP",
+      "display_name": "Dunlop",
+      "category": "bronze",
+      "yolo_classes": ["dunlop_logo"]
+    },
+    {
+      "brand_id": "JERSEY_CIB",
+      "display_name": "CIB",
+      "category": "jersey",
+      "yolo_classes": ["CIB_logo"]
+    },
+    {
+      "brand_id": "JERSEY_PRINCETON",
+      "display_name": "Princeton",
+      "category": "jersey",
+      "yolo_classes": ["princeton_logo"]
+    },
+    {
+      "brand_id": "OTHER_SQUASH_TV",
+      "display_name": "Squash TV",
+      "category": "other",
+      "yolo_classes": ["squash_tv_logo"]
+    }
+  ],
+
+  "reporting": {
+    "include_hosts_in_sov": false,
+    "include_jersey_in_sov": false,
+    "include_other_in_sov": false
+  }
+}
+

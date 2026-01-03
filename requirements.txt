@@ -1,0 +1,29 @@
+# Sponsor Exposure Analytics Pipeline Requirements
+
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+pandas>=1.3.0
+tqdm>=4.62.0
+
+# OCR engines (install at least one)
+# Option 1: EasyOCR (recommended for mixed Chinese/English)
+easyocr>=1.6.0
+
+# Option 2: PaddleOCR (alternative, faster on CPU)
+# paddlepaddle>=2.4.0
+# paddleocr>=2.6.0
+
+# Object detection (for jersey sponsors and optional venue detection)
+# YOLO models - install ultralytics for YOLOv8
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Optional: For ByteTrack tracking (if using advanced tracking)
+# filterpy>=1.4.5
+# scikit-learn>=1.0.0
+
+# Utilities
+Pillow>=9.0.0
+

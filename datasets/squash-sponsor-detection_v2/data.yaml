@@ -1,0 +1,12 @@
+train: /Users/michae14/Desktop/赞助效果分析/datasets/squash-sponsor-detection_v2/train/images
+val: /Users/michae14/Desktop/赞助效果分析/datasets/squash-sponsor-detection_v2/valid/images
+
+nc: 17
+names: ['CIB_logo', 'Logos', 'cgg_logo', 'citic_bank_logo', 'cso_logo', 'dunlop_logo', 'head_logo', 'joyus_logo', 'juss_sports_logo', 'mitsubishi_electric_logo', 'molifang_logo', 'nike_logo', 'parkway_logo', 'princeton_logo', 'psa_logo', 'shanghai_sports_logo', 'squash_tv_logo']
+
+roboflow:
+  workspace: cvframeslabelling
+  project: squash-sponsor-detection
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cvframeslabelling/squash-sponsor-detection/dataset/4
